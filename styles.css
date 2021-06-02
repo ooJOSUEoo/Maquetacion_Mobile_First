@@ -101,7 +101,7 @@ main{
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .main-exchange-container--title{
@@ -137,11 +137,31 @@ main{
 .main-commissions-table,
 .main-currency-table{
     width: 70%;
-    min-width: 235px;
+    min-width: 355px;
     max-width: 500px;
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+}
+.right-arrow{
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    margin-left: 10px;
+    background-image: url('./assets/assets/icons/right-arrow.svg');
+    background-repeat: no-repeat;
+    color: black;
+}
+.left-arrow1{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    margin-left: 10px;
+    background-image: url('./assets/assets/icons/right-arrow.svg');
+    background-repeat: no-repeat;
+    color: black;
 }
 .main-currency-table .currency-table--title{
     margin-bottom: 15px;
@@ -157,6 +177,9 @@ main{
     max-width: 300px;
     height: 250px;
     margin: 0 auto;
+    scroll-snap-align: center;
+    margin: 40px 25px 0;
+
 }
 .commissions-table--container table,
 .currency-table--container table{
@@ -250,6 +273,16 @@ main{
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--warm-black);
+}
+/*----*/
+.main-tables-container{
+    display: flex;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 50px 20px 0;
+
 }
 /*----*/
 .main-commissions-table .commissions-table--title{
@@ -414,13 +447,21 @@ main{
     line-height: 1.8rem;
     color: #757575;   
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
