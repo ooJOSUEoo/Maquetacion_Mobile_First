@@ -1,6 +1,6 @@
 .main-tables-container{
     display: flex;
-    width: 930px;
+    width: 830px;
     margin: 0 auto;
 }
 .product-cards-container{
@@ -8,6 +8,13 @@
     flex-wrap: wrap;
     width: 930px;
     margin: 0 auto;
+}
+.bitcoin-img-container{
+    height: 90vh;
+}
+.bitcoin-img-container h2{
+    line-height: 12rem;
+    font-size: 2.6rem;
 }
 .plans-container--slider{
     justify-content: center;

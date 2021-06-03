@@ -132,22 +132,21 @@ main{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--black);
 }
 .main-commissions-table,
 .main-currency-table{
-    width: 70%;
     min-width: 355px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 30px;
     font-family: "Inter", sans-serif;
 }
 .right-arrow{
     display: inline-block;
-    width: 13px;
+    width: 15px;
     height: 12px;
-    margin-left: 10px;
+    margin-left: 11px;
     background-image: url('./assets/assets/icons/right-arrow.svg');
     background-repeat: no-repeat;
     color: black;
@@ -157,18 +156,18 @@ main{
     -ms-transform: rotate(180deg);
     display: inline-block;
     width: 13px;
-    height: 12px;
-    margin-left: 10px;
+    height: 13px;
+    margin-left: 11px;
     background-image: url('./assets/assets/icons/right-arrow.svg');
     background-repeat: no-repeat;
     color: black;
 }
 .main-currency-table .currency-table--title{
     margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2.3rem;
+    font-weight: bold; 
     line-height: 2.3rem;
-    color: var(--bitcoin-orange);
+    color: orangered;
 }
 .commissions-table--container,
 .currency-table--container{
@@ -179,7 +178,6 @@ main{
     margin: 0 auto;
     scroll-snap-align: center;
     margin: 40px 25px 0;
-
 }
 .commissions-table--container table,
 .currency-table--container table{
@@ -192,8 +190,9 @@ main{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
+    color: var(--black);
     background-color: var(--just-white);
+    border-radius: 0 0 0 15px;
 }
 .commissions-table--container .commi-table__top-left,
 .currency-table--container .table__top-left{
@@ -274,7 +273,6 @@ main{
     font-weight: 300;
     color: var(--warm-black);
 }
-/*----*/
 .main-tables-container{
     display: flex;
     height: 390px;
@@ -282,13 +280,13 @@ main{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
-/*----*/
 .main-commissions-table .commissions-table--title{
     margin-bottom: 15px;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     font-weight: bold;
     line-height: 2.3rem;
-    color: var(--secondary-blue);
+    color: blue;
+
 }
 .commissions-table--date{
     width: 190px;
@@ -335,7 +333,7 @@ main{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--just-white);
 }
 .product-detail--card{
     width: 90%;
@@ -399,7 +397,7 @@ main{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--just-white);
 }
 .bitcoin-img-container{
     width: 100%;
@@ -443,7 +441,7 @@ main{
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #757575;   
+    color: black;   
 }
 .plans-container--slider{
     display: flex;
@@ -473,9 +471,9 @@ main{
     top: -15px;
     left: calc(50% - 60px);
     font-size: 1.2rem;
-    background-color: var(--bitcoin-orange);
+    background-color: var(--soft-orange);
     border-radius: 8px;
-    color: var(--just-white);
+    color: var(--black); 
     font-weight: bold;
 }
 .plan-card--title{
@@ -547,5 +545,9 @@ footer .left ul{
 }
 .left a{
     text-decoration: none;
-    color: var(--just-white);
+    color: var(--warm-black);
+}
+.right img{
+    width: 80px;
+    height: 80px;
 }
