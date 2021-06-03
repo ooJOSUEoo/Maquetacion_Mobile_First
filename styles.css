@@ -277,12 +277,10 @@ main{
 /*----*/
 .main-tables-container{
     display: flex;
-    height: 360px;
+    height: 390px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    margin: 50px 20px 0;
-
 }
 /*----*/
 .main-commissions-table .commissions-table--title{
@@ -449,7 +447,7 @@ main{
 }
 .plans-container--slider{
     display: flex;
-    height: 316px;
+    height: 319px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -549,5 +547,5 @@ footer .left ul{
 }
 .left a{
     text-decoration: none;
-    color: var(--just-white); 
+    color: var(--just-white);
 }
